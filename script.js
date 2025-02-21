@@ -3,13 +3,13 @@ const products = [
         type: "Natures Pick",
         name: "Bramley Apple Each",
             code: "34",
-                price: "£0.59" 
+                price: "£0.59", 
     },
     {
         type: "Natures Pick",
         name: "Banana Each",
             code: "17",
-                price: "£0.16"
+                price: "£0.16",
     },
     {
         type: "Natures Pick",
@@ -155,10 +155,29 @@ searchBar.addEventListener("input", function() {
             listItem.innerHTML += ` <span class="code">${product.code}</span>`; // Append code in red
             listItem.innerHTML += ` <span class="price">${product.price}</span>`; // Append price in blue
             listItem.innerHTML += ` <span class="type">${product.type}</span>`; // Append type in green
+        
             suggestionsList.appendChild(listItem);
+            if (product.image) {
+                const productImage = document.createElement("img");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+                productImage.classList.add("product-image");
+                listItem.appendChild(productImage);
+            }
         });
     }
 });
+if (product.image) {
+    const productImage = document.createElement("img");
+    productImage.src = product.image;
+    productImage.alt = product.name;
+    productImage.classList.add("product-image");
+    listItem.appendChild(productImage);
+}
+
+// Add list item to the suggestions list
+suggestionsList.appendChild(listItem);
+
 
 // Function to highlight the matching part of the product name
 function highlightMatch(productName, query) {
@@ -197,7 +216,7 @@ function showProductDetails(product) {
 }
 
 // Answering questions in the second search bar
-questionBar.addEventListener("input", function() {
+        questionBar.addEventListener("input", function() {
     const query = questionBar.value.toLowerCase();
     answerSection.style.display = "none"; // Hide the answer section initially
 
@@ -230,10 +249,10 @@ questionBar.addEventListener("input", function() {
         };
 
         const answer = answers[query.toLowerCase()];
-
         if (answer) {
             answerSection.style.display = "block"; // Show the answer section
             answerSection.textContent = answer; // Display the answer
+            
         }
-    }
-});
+}
+    });
