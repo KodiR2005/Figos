@@ -176,7 +176,7 @@ li:hover {
 }
 
 /* Mobile Responsive Layout */
-@media (max-width: 468px) {
+@media (max-width: 268px) {
   .container {
       flex-direction: column; /* Stack the search bars vertically on smaller screens */
       width: 100%;
