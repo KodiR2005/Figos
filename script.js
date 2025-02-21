@@ -5,6 +5,18 @@ const products = [
             code: "34",
                 price: "£0.59", 
     },
+    { 
+        type: "Natures Pick",
+        name: "Sweet Potato Each",
+            code: "33",
+                price: "£0.69", 
+    },
+    { 
+        type: "Natures Pick",
+        name: "Potato Each",
+            code: "22",
+                price: "£0.24", 
+    },
     {
         type: "Natures Pick",
         name: "Banana Each",
