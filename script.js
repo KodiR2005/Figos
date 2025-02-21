@@ -5,18 +5,6 @@ const products = [
             code: "34",
                 price: "£0.59", 
     },
-    { 
-        type: "Natures Pick",
-        name: "Sweet Potato Each",
-            code: "33",
-                price: "£0.69", 
-    },
-    { 
-        type: "Natures Pick",
-        name: "Potato Each",
-            code: "22",
-                price: "£0.24", 
-    },
     {
         type: "Natures Pick",
         name: "Banana Each",
@@ -44,8 +32,20 @@ const products = [
     { 
         type: "Natures Pick",
         name: "Watermelon", 
-            code: "30", 
-        price: "£2.99"
+            code: "30",
+            price: "£2.99" 
+    },
+    { 
+        type: "Natures Pick",
+        name: "Potato Each", 
+            code: "22",
+            price: "£0.24" 
+    },
+    { 
+        type: "Natures Pick",
+        name: "Sweet Potato Each", 
+            code: "33",
+            price: "£0.69" 
     },
     { 
         type: "Natures Pick",
@@ -171,19 +171,15 @@ searchBar.addEventListener("input", function() {
         
             suggestionsList.appendChild(listItem);
             if (product.image) {
-    const productImage = document.createElement("img");
-    productImage.src = product.image;
-    productImage.alt = product.name;
-    productImage.classList.add("product-image");
-    listItem.appendChild(productImage);
-}
+                const productImage = document.createElement("img");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+                productImage.classList.add("product-image");
+                listItem.appendChild(productImage);
             }
         });
     }
 });
-// Add list item to the suggestions list
-suggestionsList.appendChild(listItem);
-
 
 // Function to highlight the matching part of the product name
 function highlightMatch(productName, query) {
@@ -259,6 +255,13 @@ function showProductDetails(product) {
             answerSection.style.display = "block"; // Show the answer section
             answerSection.textContent = answer; // Display the answer
             
+            function normalizeQuery(query) {
+                // Convert the query to lowercase and remove unnecessary words
+                const removeWords = ["what", "is", "the", "to", "of", "a", "an", "on", "for"];
+                const normalizedQuery = query.toLowerCase().split(' ').filter(word => !removeWords.includes(word)).join(' ');
+            
+                return normalizedQuery;
+            }
         }
 }
     });
