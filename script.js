@@ -170,12 +170,6 @@ searchBar.addEventListener("input", function() {
             listItem.innerHTML += ` <span class="type">${product.type}</span>`; // Append type in green
         
             suggestionsList.appendChild(listItem);
-            if (product.image) {
-                const productImage = document.createElement("img");
-                productImage.src = product.image;
-                productImage.alt = product.name;
-                productImage.classList.add("product-image");
-                listItem.appendChild(productImage);
             }
         });
     }
