@@ -152,12 +152,12 @@ li:hover {
 @media (max-width: 400px) {
   .container {
       flex-direction: column; /* Stack the search bars vertically on smaller screens */
-      width: 100%;
+      width: 75%;
       padding: 10px;
   }
 
   .search-container {
-      width: 100%; /* Take full width on smaller screens */
+      width: 75%; /* Take full width on smaller screens */
       margin-bottom: 10px;
   }
 }
