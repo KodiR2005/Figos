@@ -44,7 +44,8 @@ const products = [
     { 
         type: "Natures Pick",
         name: "Watermelon", 
-            code: "30" 
+            code: "30", 
+        price: "£2.99"
     },
     { 
         type: "Natures Pick",
