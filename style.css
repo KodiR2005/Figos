@@ -29,7 +29,7 @@ body {
 }
 
 /* Container styling for both search bars */
-.sec-container {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +55,7 @@ body {
 }
 
 /* Search container styling */
-.sec-search-container {
+.search-container {
   width: 90%; /* Make each container take up 45% of the space */
   padding: 20px;
   background-color: #fff;
@@ -176,7 +176,7 @@ li:hover {
 }
 
 /* Mobile Responsive Layout */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .container {
       flex-direction: column; /* Stack the search bars vertically on smaller screens */
       width: 100%;
