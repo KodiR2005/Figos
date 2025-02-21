@@ -30,7 +30,7 @@ body {
 
 /* Search container styling */
 .search-container {
-  width: 170%; /* Make each container take up 45% of the space */
+  width: 120%; /* Make each container take up 45% of the space */
   max-width: 500px;
   padding: 20px;
   background-color: #fff;
