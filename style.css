@@ -30,8 +30,8 @@ body {
 
 /* Search container styling */
 .search-container {
-  width: 120%; /* Make each container take up 45% of the space */
-  max-width: 300px;
+  width: 170%; /* Make each container take up 45% of the space */
+  max-width: 500px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -149,16 +149,39 @@ li:hover {
 }
 
 /* Mobile Responsive Layout */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .container {
       flex-direction: column; /* Stack the search bars vertically on smaller screens */
-      width: 90%;
+      width: 100%;
       padding: 10px;
   }
 
   .search-container {
-      width: 90%; /* Take full width on smaller screens */
+      width: 100%; /* Take full width on smaller screens */
       margin-bottom: 10px;
   }
+}
+
+/* Style the product image */
+.product-image {
+  width: 50px; /* Adjust the size of the image */
+  height: 50px; /* Adjust the size of the image */
+  margin-right: 50px; /* Add space between the image and the text */
+  vertical-align: middle; /* Align the image vertically with the text */
+  border-radius: 4px; /* Optional: round the corners of the image */
+  align-items: center;
+}
+
+/* Make sure the list item displays correctly with text and image */
+.suggestions-list li {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center the items vertically */
+  padding: 5px;
+  border-bottom: 1px solid #ddd; /* Optional: Add a border between list items */
+}
+
+/* Add some spacing between the text elements */
+.suggestions-list li span {
+  margin-right: 10px; /* Add space between code, price, and type */
 }
 
