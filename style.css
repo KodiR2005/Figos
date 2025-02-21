@@ -149,15 +149,15 @@ li:hover {
 }
 
 /* Mobile Responsive Layout */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container {
       flex-direction: column; /* Stack the search bars vertically on smaller screens */
-      width: 85%;
+      width: 90%;
       padding: 10px;
   }
 
   .search-container {
-      width: 85%; /* Take full width on smaller screens */
+      width: 90%; /* Take full width on smaller screens */
       margin-bottom: 10px;
   }
 }
