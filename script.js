@@ -225,21 +225,31 @@ function showProductDetails(product) {
     if (query) {
         // Simple hardcoded answers based on the question
         const answers = {
+            //waste
             "eggs waste": "A week after (BB) date = WASTE - WITHIN the week after (BB) date = CHARITY - NEVER place in PRODUCE QUALITY - take quality of the eggs into account.",
             "waste": "Damaged bread, chilled chiller products, empty/open ambient/specials products (beyond being taped), empty produce boxes/packets. (See 'eggs waste' for further information)",
             "charity": "Bread, ambient produce, flowers, specials products (beyond being sold). (See 'eggs waste' for further information)",
             "produce quality": "Chilled produce",
             "milk waste": "Expense it",
-            "alarm code": "12340 = OFF - 12343 = ON",
+            "tgtg": "no less than £12, no more than £25, only todays date products.",
+            //specials
             "specials spaces": "Not till 16:00",
             "specials food": "Not till 19:00",
+            //till
             "till money limit": "£500",
             "till drop": "All 20s, Leave 3 10s",
             "close till": "1 code",
             "logout till": "2 code",
             "add money till": "3 code",
+            //management
             "store number": "C096",
             "oe": "How many hours we get",
+            //warehouse
+            "alarm code": "12340 = OFF - 12343 = ON",
+            "blue pallets": "10 high, stack blue with blue",
+            "red pallets": "10 high, stack red with red, green crates = 37 high, leave no more then 3 against chiller/freezer",
+            "d pallets": "10 high, stack d with d, bread crates no taller than the markings on the warehouse wall, grey & black stacked no taller than you.",
+            "ganzo": "The ganzo is the big cleaning machine mostly used within the mornings.",
         };
 
         const answer = answers[query.toLowerCase()];
