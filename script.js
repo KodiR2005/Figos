@@ -225,6 +225,7 @@ function showProductDetails(product) {
     if (query) {
         // Simple hardcoded answers based on the question
         const answers = {
+
             //waste
             "eggs waste": "A week after (BB) date = WASTE - WITHIN the week after (BB) date = CHARITY - NEVER place in PRODUCE QUALITY - take quality of the eggs into account.",
             "waste": "Damaged bread, chilled chiller products, empty/open ambient/specials products (beyond being taped), empty produce boxes/packets. (See 'eggs waste' for further information)",
