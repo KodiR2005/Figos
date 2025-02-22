@@ -238,7 +238,7 @@ function showProductDetails(product) {
             "close till": "1 code",
             "logout till": "2 code",
             "add money till": "3 code",
-            "store number": "CO96",
+            "store no": "CO96",
             "oe": "How many hours we get",
         };
 
